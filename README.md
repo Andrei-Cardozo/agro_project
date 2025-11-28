@@ -249,7 +249,7 @@ http://localhost/agroproject/tests/observer_test.php
 
 ### 🖥 Para rodar o modo CLI (interativo, recomendado para correção):
 
-Abra o terminal do vscode e digite.
+Abra o terminal do vscode e digite:
 
 cd app (enter)
 
