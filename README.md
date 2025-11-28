@@ -245,7 +245,7 @@ http://localhost/agroproject/tests/observer_test.php
 
 📌 Mesmo que você altere valores ou estratégias no back-end, todos os testes continuam funcionando, pois o sistema usa apenas lógica de domínio (sem banco de dados).
 
--- 
+---
 
 ### 🖥 Para rodar o modo CLI (interativo, recomendado para correção):
 
