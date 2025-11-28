@@ -84,23 +84,75 @@ Se o sistema precisar notificar múltiplos interessados (e-mail, dashboard, log)
 
 ---
 
-# 🖥 CLI / Menu Inicial
+## 🖥 CLI / Menu Inicial
 
-O arquivo **index.php** funciona como ponto de entrada geral.
+O arquivo index.php é o ponto de entrada quando o professor acessa via navegador.
 
-Ele mostra:
+Ele exibe:
 
-- Título do sistema
-- Nome do desenvolvedor
-- Links diretos para os 3 conjuntos de testes:
-  - **Strategy/Decorator/Factory** (`test_all.php`)
-  - **Observer** (`observer_test.php`)
-  - **Test suite completa**
+- O nome do sistema
+- Informações do desenvolvedor
+- Acesso rápido aos testes:
+- Strategy / Decorator / Factory (test_all.php)
+- Observer (observer_test.php)
+- Suite completa de testes
 
-Além disso:
+#### ⭐ Diferença importante entre acessar pelo navegador e pelo terminal
 
-📌 **Se você alterar os valores de cálculo no backend, o sistema continua funcionando normalmente.**  
-O CLI apenas organiza a navegação para o professor.
+Quando o professor abre o localhost, ele só consegue ver os resultados usando os arquivos de teste.
+Ou seja:
+
+* ✅ Pelo navegador (localhost):
+
+As configurações (cultura, área, estratégia, benefícios etc.) não são interativas.
+Qualquer mudança deve ser feita no código, dentro dos arquivos de teste.
+
+Exemplo: mudar a área plantada → alterar diretamente no test_all.php.
+
+* 🖥️ Já pelo Terminal / CLI (php app/cli.php)
+
+O professor pode preencher tudo na hora, com interatividade completa:
+
+- escolher cultura
+- informar área
+- selecionar estratégia
+- aplicar benefícios (Subsidio, Seguro, ambos)
+- adicionar múltiplas culturas
+- ativar ou não notificações por e-mail
+
+Exatamente como neste exemplo real:
+
+=====================================
+      SISTEMA DE CULTIVOS - CLI
+=====================================
+
+Deseja receber notificações por email? (s/n): n
+Escolha a cultura:
+  [1] Milho
+  [2] Soja
+  [3] Alface
+2
+Informe a área plantada (em hectares): 10
+Escolha a estratégia de custo:
+  [1] Padrão
+  [2] Orgânico
+  [3] Hidroponico
+3
+Deseja aplicar algum benefício:
+  [1] Nenhum
+  [2] Subsidio
+  [3] Seguro
+  [4] Subsidio + Seguro
+3
+...
+
+
+Ou seja:
+
+✔ Navegador → Testes estáticos
+✔ Terminal → Teste dinâmico e totalmente interativo
+
+Essa diferença é intencional, seguindo o modelo acadêmico do projeto (Padrões de Projeto + CLI).
 
 ---
 
@@ -191,7 +243,14 @@ Teste do Observer:
 http://localhost/agroproject/tests/observer_test.php
 
 
-📌 Todos os cálculos funcionam mesmo que você altere valores no back-end.
+📌 Mesmo que você altere valores ou estratégias no back-end, todos os testes continuam funcionando, pois o sistema usa apenas lógica de domínio (sem banco de dados).
+
+#### 🖥 Para rodar o modo CLI (interativo, recomendado para correção):
+
+Abra o terminal do vscode e digite:
+cd app (enter)
+
+C:\xampp\php\php.exe cli.php
 
 ## 🧠 Decisões de Design
 
@@ -209,11 +268,12 @@ Organização modular facilita testes isolados.
 
 ## ⚠ Limitações
 
-Não há uma interface completa para alterar valores via navegador (opcional no trabalho).
+Não existe interface gráfica para alterar valores pelo navegador.
+→ Alterações no modo web só podem ser feitas editando os arquivos de teste.
 
-O sistema opera com valores fixos, sem variáveis de mercado reais.
+Os valores de custo e benefícios não usam dados reais de mercado.
 
-Foco acadêmico: não há persistência em banco de dados.
+Projeto acadêmico: não há persistência, tudo é processado em memória.
 
 ## ✔ Conclusão
 
