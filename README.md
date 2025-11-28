@@ -126,9 +126,9 @@ Exatamente como neste exemplo real:
       SISTEMA DE CULTIVOS - CLI
 =====================================
 
-Deseja receber notificações por email? 
+Deseja receber notificações por email? (s/n): 
 
-(s/n): R=n
+R=n
 
 Escolha a cultura:
   [1] Milho
