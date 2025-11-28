@@ -5,6 +5,14 @@ Este projeto simula o planejamento de produção agrícola utilizando quatro pad
 O sistema calcula custos de produção de diferentes culturas, permite aplicar benefícios (subsídios/seguros), organiza a criação das culturas de forma centralizada e envia notificações ao usuário sempre que um cálculo é executado.
 
 ---
+# Justificativa para a escolha do PHP
+
+Optei por desenvolver o projeto em PHP porque é a linguagem com a qual tenho mais familiaridade e fluidez no dia a dia. Já utilizei PHP em outros trabalhos, como um sistema pessoal de academia que estou a desenvolver, e isso me deu uma base sólida para estruturar o backend com segurança, rapidez e confiança.
+Além disso, por já ter lidado com problemas reais usando PHP, acabei criando uma afinidade natural com o ecossistema, entendendo facilmente como integrar banco de dados, estruturar regras de negócio e organizar o fluxo de requisições.
+
+No fim das contas, o PHP me permitiu entregar o projeto de forma mais eficiente, mantendo um desenvolvimento claro, estável e dentro do prazo.
+
+---
 
 # 🧭 Problema do Domínio
 
