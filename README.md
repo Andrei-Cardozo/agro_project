@@ -160,13 +160,21 @@ Essa diferença é intencional, seguindo o modelo acadêmico do projeto (Padrõe
 
 agroproject/
 │
+
 ├── domain/
+
 ├── strategies/
+
 ├── decorators/
+
 ├── factory/
+
 ├── observers/
+
 ├── tests/
+
 ├── README.md
+
 └── index.php
 
 
