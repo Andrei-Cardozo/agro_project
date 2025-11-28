@@ -33,6 +33,7 @@ function escolherOpcao(array $opcoes, string $prompt): string {
 
 echo "=====================================\n";
 echo "      SISTEMA DE CULTIVOS - CLI\n";
+echo "      Desenvolvido por Andrei Cardozo\n";
 echo "=====================================\n\n";
 
 // Configurar Notifier/Observer
