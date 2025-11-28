@@ -126,24 +126,36 @@ Exatamente como neste exemplo real:
       SISTEMA DE CULTIVOS - CLI
 =====================================
 
-Deseja receber notificações por email? (s/n): n
+Deseja receber notificações por email? 
+
+(s/n): R=n
+
 Escolha a cultura:
   [1] Milho
   [2] Soja
   [3] Alface
-2
-Informe a área plantada (em hectares): 10
+
+R=2
+
+Informe a área plantada (em hectares): 
+
+R=10
+
 Escolha a estratégia de custo:
   [1] Padrão
   [2] Orgânico
   [3] Hidroponico
-3
+
+R=3
+
 Deseja aplicar algum benefício:
   [1] Nenhum
   [2] Subsidio
   [3] Seguro
   [4] Subsidio + Seguro
-3
+
+R=3
+
 ...
 
 
