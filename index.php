@@ -39,7 +39,7 @@
         .btn {
             display: block;
             width: 100%;
-            padding: 14px;
+            padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
             border: none;
@@ -69,7 +69,8 @@
     <h1>🌱 Sistema de Produção Agrícola</h1>
     <p>Selecione uma das opções abaixo para visualizar as funcionalidades do projeto.</p>
 
-    <a class="btn" href="app/main.php">▶ Executar Sistema Principal</a>
+    <a class="btn" href="app/main_interativo.php">▶ Executar Sistema Principal</a>
+    <a class="btn" href="app/main.php">▶ Executar Teste Pré-definido</a>
     <a class="btn" href="tests/test_all.php">🧪 Teste Completo (Todos os Padrões)</a>
     <a class="btn" href="tests/observer_test.php">🔔 Teste do Observer</a>
 

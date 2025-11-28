@@ -3,7 +3,7 @@
 
 require_once __DIR__ . '/../observers/observer.php';
 require_once __DIR__ . '/../observers/notifier.php';
-require_once __DIR__ . '/../observers/emailObserver.php';
+require_once __DIR__ . '/../observers/email_observer.php';
 
 use Observers\Notifier;
 use Observers\EmailObserver;

@@ -16,7 +16,7 @@ require_once '../decorators/subsidio.php';
 require_once '../decorators/seguro.php';
 require_once '../factory/crop_factory.php';
 require_once '../observers/observer.php';
-require_once '../observers/emailObserver.php';
+require_once '../observers/email_observer.php';
 require_once '../observers/notifier.php';
 
 

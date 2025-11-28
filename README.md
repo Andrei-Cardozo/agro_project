@@ -5,14 +5,6 @@ Este projeto simula o planejamento de produção agrícola utilizando quatro pad
 O sistema calcula custos de produção de diferentes culturas, permite aplicar benefícios (subsídios/seguros), organiza a criação das culturas de forma centralizada e envia notificações ao usuário sempre que um cálculo é executado.
 
 ---
-# Justificativa para a escolha do PHP
-
-Optei por desenvolver o projeto em PHP porque é a linguagem com a qual tenho mais familiaridade e fluidez no dia a dia. Já utilizei PHP em outros trabalhos, como um sistema pessoal de academia que estou a desenvolver, e isso me deu uma base sólida para estruturar o backend com segurança, rapidez e confiança.
-Além disso, por já ter lidado com problemas reais usando PHP, acabei criando uma afinidade natural com o ecossistema, entendendo facilmente como integrar banco de dados, estruturar regras de negócio e organizar o fluxo de requisições.
-
-No fim das contas, o PHP me permitiu entregar o projeto de forma mais eficiente, mantendo um desenvolvimento claro, estável e dentro do prazo.
-
----
 
 # 🧭 Problema do Domínio
 
@@ -134,36 +126,24 @@ Exatamente como neste exemplo real:
       SISTEMA DE CULTIVOS - CLI
 =====================================
 
-Deseja receber notificações por email? (s/n): 
-
-R=n
-
+Deseja receber notificações por email? (s/n): n
 Escolha a cultura:
   [1] Milho
   [2] Soja
   [3] Alface
-
-R=2
-
-Informe a área plantada (em hectares): 
-
-R=10
-
+2
+Informe a área plantada (em hectares): 10
 Escolha a estratégia de custo:
   [1] Padrão
   [2] Orgânico
   [3] Hidroponico
-
-R=3
-
+3
 Deseja aplicar algum benefício:
   [1] Nenhum
   [2] Subsidio
   [3] Seguro
   [4] Subsidio + Seguro
-
-R=3
-
+3
 ...
 
 
@@ -179,23 +159,14 @@ Essa diferença é intencional, seguindo o modelo acadêmico do projeto (Padrõe
 # 🗂 Estrutura de Pastas
 
 agroproject/
-
 │
-
 ├── domain/
-
 ├── strategies/
-
 ├── decorators/
-
 ├── factory/
-
 ├── observers/
-
 ├── tests/
-
 ├── README.md
-
 └── index.php
 
 
@@ -274,16 +245,9 @@ http://localhost/agroproject/tests/observer_test.php
 
 📌 Mesmo que você altere valores ou estratégias no back-end, todos os testes continuam funcionando, pois o sistema usa apenas lógica de domínio (sem banco de dados).
 
----
+#### 🖥 Para rodar o modo CLI (interativo, recomendado para correção):
 
-### 🖥 Para rodar o modo CLI (interativo, recomendado para correção):
-
-Abra o terminal do vscode e digite:
-
-cd app (enter)
-
-e então digite:
-
+Abra o terminal do vscode e digite: //editar
 C:\xampp\php\php.exe cli.php
 
 ## 🧠 Decisões de Design
@@ -301,9 +265,6 @@ Observer adiciona reatividade ao sistema.
 Organização modular facilita testes isolados.
 
 ## ⚠ Limitações
-
-Não existe interface gráfica para alterar valores pelo navegador.
-→ Alterações no modo web só podem ser feitas editando os arquivos de teste.
 
 Os valores de custo e benefícios não usam dados reais de mercado.
 
