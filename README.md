@@ -274,6 +274,8 @@ Abra o terminal do vscode e digite:
 
 cd app (enter)
 
+e então digite:
+
 C:\xampp\php\php.exe cli.php
 
 ## 🧠 Decisões de Design
