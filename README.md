@@ -159,6 +159,7 @@ Essa diferença é intencional, seguindo o modelo acadêmico do projeto (Padrõe
 # 🗂 Estrutura de Pastas
 
 agroproject/
+
 │
 
 ├── domain/
